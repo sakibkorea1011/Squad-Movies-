@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squad Movies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: pink;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #000; /* টেক্সট কালার কালো */
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff4444;
+    }
+    .search-box {
+      text-align: center;
+      margin: 20px;
+    }
+    .search-box input {
+      padding: 10px;
+      width: 70%;
+      border-radius: 5px;
+      border: none;
+    }
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .movie-card {
+      background: #222;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .movie-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .home-btn {
+      display: block;
+      text-align: center;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #ff4444;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🎬 Squad Movies</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">Anime</a>
+    <a href="#">Series</a>
+  </nav>
+
+  <!-- Search Box -->
+  <div class="search-box">
+    <input type="text" placeholder="Search movies...">
+  </div>
+
+  <!-- Home Button -->
+  <a href="index.html" class="home-btn">🏠 Home Page</a>
+
+  <!-- Movie Section -->
+  <div class="movies">
+    <div class="movie-card">
+      <img src="https://via.placeholder.com/150" alt="Movie 1">
+      <h3>Movie Title 1</h3>
+      <a href="#">View File</a>
+    </div>
+    <div class="movie-card">
+      <img src="https://via.placeholder.com/150" alt="Movie 2">
+      <h3>Movie Title 2</h3>
+      <a href="#">View File</a>
+    </div>
+    <div class="movie-card">
+      <img src="https://via.placeholder.com/150" alt="Anime 1">
+      <h3>Anime Title 1</h3>
+      <a href="#">View File</a>
+    </div>
+  </div>
+
+</body>
+</html>
